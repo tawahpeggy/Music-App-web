@@ -1,0 +1,25 @@
+{
+  "name": "music-app-web",
+  "version": "1.0.0",
+  "description": "An app to stream cameroon music.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tawahpeggy/Music-App-web.git"
+  },
+  "keywords": [
+    "237",
+    "cameroon",
+    "kamer",
+    "music"
+  ],
+  "author": "tawahpeggy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tawahpeggy/Music-App-web/issues"
+  },
+  "homepage": "https://github.com/tawahpeggy/Music-App-web#readme"
+}
