@@ -4,28 +4,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="../../style.css">
   <title>Login</title>
 </head>
 <body>
   <div class="container">
-    <h1>Login</h1>
+    <h1>Register</h1>
     <form action="">
       <div class="box">
-        <input type="text" placeholder="Username" required maxlength="25">
+        <input type="text" placeholder="FirstName" required maxlength="25">
+      </div> <div class="box">
+        <input type="text" placeholder="LastName" required maxlength="25">
+      </div> <div class="box">
+        <input type="email" placeholder="Email" required maxlength="25">
       </div>
       <div class="box">
         <input type="password" placeholder="Password"	required maxlength="15">
       </div>
-      <input type="submit" class="btn" value="Login">
+      <div class="box">
+        <input type="password" placeholder="Re-enter Password"	required maxlength="15">
+      </div>
+      <input type="submit" class="btn" value="Reister">
     </form>
-    <a href="#" class="b1">Forget Password?</a>
-    <a href="#" class="b2">Create Account</a>
-    <br><br><hr>
-    <p>Or Login With</p>
-    <div class="icon">
-    <i class="fab fa-github fa-2x"></i>
-    <i class="fab fa-google fa-2x"></i>
-    <i class="fab fa-facebook-square fa-2x"></i>
+    <br><br>
+    <a href="/html/authentication/login.html" class="b2">Login Instead</a>
+    <a href="#" class="b1">Forgot Password?</a>
+    <br><br>
     </div>
   </div>
 </body>
