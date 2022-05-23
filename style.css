@@ -101,22 +101,22 @@ a:hover {
 .fab:hover {
   cursor: pointer; }
 
-.body {
+.footer-body {
   display: grid;
   grid-template-rows: 1fr 10rem auto;
   grid-template-areas: "main" "." "footer";
   overflow-x: hidden;
   background: #F5F7FA;
-  min-height: 100vh;
+  min-height: 10vh;
   font-family: 'Open Sans', sans-serif; }
-  .body .footer {
+  .footer-body .footer {
     z-index: 1;
     --footer-background:#ED5565;
     display: grid;
     position: relative;
     grid-area: footer;
     min-height: 12rem; }
-    .body .footer .bubbles {
+    .footer-body .footer .bubbles {
       position: absolute;
       top: 0;
       left: 0;
@@ -124,37 +124,37 @@ a:hover {
       height: 1rem;
       background: var(--footer-background);
       filter: url("#blob"); }
-      .body .footer .bubbles .bubble {
+      .footer-body .footer .bubbles .bubble {
         position: absolute;
         left: var(--position, 50%);
         background: var(--footer-background);
         border-radius: 100%;
         animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
         transform: translate(-50%, 100%); }
-    .body .footer .content {
+    .footer-body .footer .content {
       z-index: 2;
       display: grid;
       grid-template-columns: 1fr auto;
       grid-gap: 4rem;
       padding: 2rem;
       background: var(--footer-background); }
-      .body .footer .content a, .body .footer .content p {
+      .footer-body .footer .content a, .footer-body .footer .content p {
         color: #F5F7FA;
         text-decoration: none; }
-      .body .footer .content b {
+      .footer-body .footer .content b {
         color: white; }
-      .body .footer .content p {
+      .footer-body .footer .content p {
         margin: 0;
         font-size: .75rem; }
-      .body .footer .content > div {
+      .footer-body .footer .content > div {
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .body .footer .content > div > div {
+        .footer-body .footer .content > div > div {
           margin: 0.25rem 0; }
-          .body .footer .content > div > div > * {
+          .footer-body .footer .content > div > div > * {
             margin-right: .5rem; }
-        .body .footer .content > div .image {
+        .footer-body .footer .content > div .image {
           align-self: center;
           width: 4rem;
           height: 4rem;
@@ -342,7 +342,7 @@ a {
       font-size: 1.05rem; } }
 
 .card-body {
-  background: #dfe7ef;
+  background: #e1e7ec;
   font-family: "Bitter", serif; }
 
 * {
@@ -370,8 +370,8 @@ a {
 
 .player {
   background: #eef3f7;
-  width: 310px;
-  min-height: 380px;
+  width: 410px;
+  min-height: 480px;
   box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
   border-radius: 15px;
   padding: 30px; }
@@ -598,34 +598,6 @@ a {
         font-size: 18px;
         min-height: 50px; } }
 
-.github-btn {
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: #24292e;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  transition: all .3s ease-in-out; }
-  @media screen and (min-width: 500px) {
-    .github-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36); } }
-  @media screen and (max-width: 700px) {
-    .github-btn {
-      position: relative;
-      bottom: auto;
-      right: auto;
-      margin-top: 20px; }
-      .github-btn:active {
-        transform: scale(1.1);
-        box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36); } }
-
 .scale-out-enter-active {
   transition: all .35s ease-in-out; }
 
@@ -657,3 +629,40 @@ a {
   transform: scale(0.55);
   pointer-events: none;
   opacity: 0; }
+
+.search-container {
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(#d91946, #862532);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  border-color: #8160dd;
+  padding: 10px; }
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cccc; }
+
+::placeholder {
+  color: whitesmoke; }
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }

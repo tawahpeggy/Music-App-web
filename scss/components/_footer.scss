@@ -1,10 +1,10 @@
-.body {
+.footer-body {
     display:grid;
     grid-template-rows: 1fr 10rem auto;
     grid-template-areas:"main" "." "footer";
     overflow-x:hidden;
     background:#F5F7FA;
-    min-height:100vh;
+    min-height:10vh;
     font-family: 'Open Sans', sans-serif;
     .footer {
         z-index: 1;
